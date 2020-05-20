@@ -1,10 +1,45 @@
-body {
-  background-image: url('https://wallpapercave.com/wp/wp4804847.jpg');
-  background-size: auto 100vh;
-  font-family: Helvetica, sans-serif;
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: url(../imagens/bg2.jpg) bottom center scroll;
+  background-size: auto 100vh;
+  background-attachment: fixed; /* aqui é opcional */
+  font-family: Helvetica, sans-serif;
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* BreakingPoints */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: #170420;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
 
 .menu ul {
   display: flex;
@@ -15,21 +50,35 @@ body {
   list-style: none;
 }
 
+.menu a {
+  display: block;
+  padding: 15px 20px;
+}
+
 a {
-  color: rgba(255, 166, 0, 0.664);
+  color: #ea1646;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #ffe730;
 }
 
 .site-subtitle,
 .site-title {
-  color: #fafafabb;
+  color: #170420;
   text-align: center;
+}
+
+.site-title {
+    font-size: 2em;
 }
 
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
 }
