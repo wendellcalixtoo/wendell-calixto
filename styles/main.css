@@ -82,11 +82,15 @@ a:hover {
   font-family: 'Press Start 2P', cursive;
 }
 
+
+.contato,
 .portfolio {
   background-color: rgb(134, 115, 196);
   padding: 2em;
+  min-height: 100vh;
 }
 
+.contato,
 .portfolio h2 {
   font-family: 'Press Start 2P', cursive;
   margin-bottom: 1em;
