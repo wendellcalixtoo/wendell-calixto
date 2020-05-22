@@ -5,10 +5,11 @@
 }
 
 body {
-  background: url(../imagens/bg2.jpg) bottom center scroll;
+  /* background: url(../imagens/bg2.jpg) bottom center scroll; */
+  background-color: #7159C1;
   background-size: auto 100vh;
   background-attachment: fixed; /* aqui é opcional */
-  font-family: Helvetica, sans-serif;
+  font-family: 'Source Code Pro', monospace;
   height: 100vh;
   font-size: 12px;
 }
@@ -71,14 +72,55 @@ a:hover {
 }
 
 .site-title {
-    font-size: 2em;
+  font-size: 2em;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.8em;
 }
 
 .site-subtitle {
   font-style: italic;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.portfolio {
+  background-color: rgb(134, 115, 196);
+  padding: 2em;
+}
+
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 3em;
+  justify-content: center;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px 240px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
 }
 
 .img-portfolio {
+  border-radius: 5px;
   height: 180px;
-  width: 180px;
+  width: 280px;
+  object-fit: cover;
 }
+
